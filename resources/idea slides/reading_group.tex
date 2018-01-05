@@ -1,0 +1,389 @@
+\documentclass{beamer}
+
+\input{beamer_preamble}
+
+\title{A quick a dirty guide to using ggplot2}
+\subtitle{with data wrangling tips}
+\author{Charles T. Gray}
+\institute{Salim Group Journal Club}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\maketitle
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Themes and objectives}
+\begin{frame}{Themes and objectives}
+\begin{itemize}
+\item Leave today confident with everyday ggplotting.
+\item Also learn some of the symbiotic data wrangling techniques.
+\item \defn{Leave no person behind} style of coding workshop.
+\item Use data visualisation and wrangling to explore who survived the Titanic's sinking.
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The basic structure of a ggplot}
+\begin{frame}{Structure of a ggplot}
+\textbf{ggplot2} is structured according to the \defn{grammar of graphics}.
+
+\bigskip
+
+The basic components of a \code{ggplot} are:
+\begin{description}
+\item[ggplot]  a \defn{mapping} of a dataset, so that R can interpret your points visually;
+\item [aes] \defn{aesthetics}, providing details such as x and y axes;
+\item [geom] \defn{geometry}, specify type of plot.
+\end{description}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Getting started}
+\begin{frame}[fragile]{Packages}
+We begin by installing some packages using \ttt{library()}:
+\begin{itemize}
+\item \ttt{dplyr} for data wrangling;
+\item \ttt{tidyr} for data wrangling;
+\item \ttt{ggplot2} for data visualisation.
+\end{itemize}
+
+These packages require dataframes with rows as observations and columns as variables.
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Titanic data}
+Today we will use survival data from the Titanic, which you may be familiar with from such `documentaries' as: 
+\bigskip
+
+\textbf{Titanic (1997)}\\\
+\begin{tiny}
+\emph {Directed by James Cameron. Ultra-Condensed by Samuel Stoddard (Movie-a-minute).}
+\end{tiny}
+\begin{small}
+\textbf{Leonardo DiCaprio}\\
+
+\qquad  Your social class is stuffy. Let's dance with the ship's rats and have fun. \\
+
+\textbf{Kate Winslet}\\
+
+\qquad  You have captured my heart. Let's run around the ship and giggle. \\
+
+\emph{(The ship SINKS.)}\\
+
+\textbf{Leonardo DiCaprio}\\
+
+\qquad    Never let go. \\
+
+\textbf{Kate Winslet}\\
+
+ \qquad   I promise. \emph{(Lets go.)}
+
+THE END
+\end{small}
+
+\end{frame}
+
+\begin{frame}[fragile]{Titanic data} 
+\begin{verbatim}
+> # A quick look at the data.
+> titanic.data %>% 
++   select(name, survived, age) %>% 
++   head(3)
+                            name survived     age
+1  Allen, Miss. Elisabeth Walton        1 29.0000
+2 Allison, Master. Hudson Trevor        1  0.9167
+3   Allison, Miss. Helen Loraine        0  2.0000
+\end{verbatim}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\subsection{Layers}
+\begin{frame}{Layers: first layer}
+The basic components of a \code{ggplot} are:
+\begin{description}
+\item[ggplot]  \underline{a \defn{mapping} of a dataset};
+\item [aes] \defn{aesthetics}, providing details such as x and y axes;
+\item [geom] \defn{geometry}, specify type of plot.
+\end{description}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Layers: first layer}
+Plots are built in layers, added using $+$. 
+
+\begin{example}
+\dummycode{some.data} \pipe \code{ggplot()} + \dummycode{layers}
+\end{example}
+
+\pause
+\begin{definition}
+The \defn{pipe} symbol \pipe passes the first object into the first argument of the subsequent function. Its keyboard shortcut is \ttt{control + shift + M}.
+\end{definition}
+\end{frame}
+
+\begin{frame}{Layers: first layer}
+\exercise{What happens if you pipe \code{titanic.data} into \code{ggplot()} without adding any layers?}
+
+\begin{example}
+\dummycode{some.data} \pipe \code{ggplot()}
+\end{example}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\subsection{Aesthetics}
+\begin{frame}{Aesthetics: global aesthetics}
+The basic components of a \code{ggplot} are:
+\begin{description}
+\item[ggplot]  a \defn{mapping} of a dataset;
+\item [aes] \underline{\defn{aesthetics}, providing details such as x and y axes};
+\item [geom] \defn{geometry}, specify type of plot.
+\end{description}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Aesthetics}
+Aesthetics apply to the data (i.e., points and lines):
+\begin{itemize}
+\item $x$ and $y$ axes;
+\item colour;
+\item size;
+\item transparancy;
+\item grouping.
+\end{itemize}
+
+Aesthetics can apply globally across all layers, or just to a specific layer.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Aesthetics: global aesthetics}
+When you map your data, you may specify global aesthetics using \code{aes()} as an argument within \code{ggplot()}.
+
+\pause
+
+\begin{example}
+\dummycode{some.data} \pipe \codecomment{Load some data} \\
+\code{ggplot( \codecomment{Map the data for visualisation}\\
+\quad aes(x = \dummycode{x.variable}, \codecomment{Specify x axis}\\
+\qquad \quad y = \dummycode{y.variable}) \codecomment{Specify y axis}}\\
+) 
+\end{example}
+
+\bigskip 
+These aesthetics set the $x$ and $y$ variables for \underline{all} layers. 
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Aesthetics: global aesthetics}
+\exercise{Create a first layer for \code{titanic.data} and set the $x$-axis to \code{age} and the $y$-axis to \code{fare}.
+}
+\begin{example}
+\dummycode{some.data} \pipe \codecomment{Load some data} \\
+\code{ggplot(} \codecomment{Map the data for visualisation}\\
+\quad \code{aes(x = \dummycode{x.variable}}, \codecomment{Specify x axis}\\
+\qquad \quad \code{ y = \dummycode{y.variable})} \codecomment{Specify y axis}\\
+) 
+\end{example}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Geometries}
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Geometries}
+The basic components of a \code{ggplot} are:
+\begin{description}
+\item[ggplot]  a \defn{mapping} of a dataset;
+\item [aes] \defn{aesthetics}, providing details such as x and y axes;
+\item [geom] \underline{\defn{geometry}, specify type of plot}.
+\end{description}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Geometries}
+\code{Geom}s are types of plots. Each geometry function begins with \code{geom\_}:
+\begin{description}
+\item[\code{histogram}] 
+\item[\code{point}] scatterplot
+\item[\code{density}]
+\item[\code{freqpoly}] a density curve of counts
+\item[\code{smooth}] add a smoothed regression line (default loess)
+\end{description}
+
+\pause
+
+\begin{example}
+\dummycode{some.data} \pipe \codecomment{Load some data} \\
+\code{ggplot(} \codecomment{Map the data for visualisation}\\
+\quad \code{aes(x = \dummycode{x.variable}}, \codecomment{Specify x axis}\\
+\qquad \quad \code{ y = \dummycode{y.variable})} $+$ \codecomment{Specify y axis}\\
+\quad \code{geom\_point()} \codecomment{ Add a scatterplot layer}
+\end{example}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Geometries}
+\exercise{Create a histogram of the ages of the passengers on the Titanic.}
+
+\begin{example}
+\dummycode{some.data} \pipe \codecomment{Load some data} \\
+\code{ggplot(} \codecomment{Map the data for visualisation}\\
+\quad \code{aes(x = \dummycode{x.variable}}, \codecomment{Specify x axis}\\
+\qquad \quad \code{ y = \dummycode{y.variable})} $+$ \codecomment{Specify y axis}\\
+\quad \code{geom\_point()} \codecomment{ Add a scatterplot layer}
+\end{example}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Local aesthetics}
+
+You can specify aesthetics at the layer level. For example, you can modify the geom. 
+
+\exercise{Modify your histogram with the histogram-specific aesthetic \code{binwidth} to something more meaningful.}
+
+\begin{example}
+\dummycode{some.data} \pipe \\
+\code{ggplot(} \\
+\quad \code{aes(x = \dummycode{x.variable}}, \\
+\qquad \quad \code{ y = \dummycode{y.variable})} $+$ \\
+\quad \code{geom\_\dummycode{thisgeom}(aes(\dummycode{geom.specific = my.specification}
+)} \codecomment{ Add a geom layer with geom specific aesthetic.}
+\end{example}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Data wrangling for missing values}
+We can use the \code{filter()} function to select the rows we're interested in for our visualisation.
+
+\exercise{Modify your histogram to filter out the missing age rows; i.e., produce your histogram without error messages.}
+
+\begin{example}
+\dummycode{some.data} \pipe \\
+\code{filter(\dummycode{my.variable} <= \dummycode{some.number} )} \pipe \\ 
+\code{ggplot(} \\
+\quad \code{aes(x = \dummycode{x.variable}}, \\
+\qquad \quad \code{ y = \dummycode{y.variable})} $+$ \\
+\quad \code{geom\_\dummycode{thisgeom}(aes(\dummycode{geom.specific = my.specification}
+)} \codecomment{ Add a geom layer with geom specific aesthetic.}
+\end{example}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Multiple layers}
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Another geom layer}
+We can add more layers using $+$. 
+
+\exercise{Add a \code{freqpoly} geom layer to your histogram.}
+
+Notice that if you have inconsistent geom-specific aesthetics your visualisation can be somewhat confusing.
+
+\begin{example}
+\dummycode{some.data} \pipe  \\
+\code{filter(\dummycode{my.variable} <= \dummycode{some.number} )} \pipe \\ 
+\code{ggplot(}\\
+\quad \code{aes(x = \dummycode{x.variable}}, \\
+\qquad \quad \code{ y = \dummycode{y.variable})} $+$ \\
+\code{geom\_\dummycode{thisgeom}(aes(\dummycode{geom.specific = my.specification}
+)}  +
+ \code{geom\_\dummycode{anothergeom}() \codecomment{Add another geom layer}}
+\end{example}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Other layers}
+Layers aren't just geoms, but can be:
+\begin{itemize} 
+\item Horizontal and vertical lines;
+\item Titles and axis labels;
+\item Colour palettes and themes.
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Other layers: main title}
+\exercise{Add a title layer to your histogram with \code{ggtitle()}.}
+
+\begin{example}
+\dummycode{some.data} \pipe  \\
+\code{ggplot(}\\
+\quad \code{aes(x = \dummycode{x.variable}}, \\
+\qquad \quad \code{ y = \dummycode{y.variable})} $+$ \\
+ \code{geom\_\dummycode{some.geom}()} $+$ \\
+ \code{ggtitle(``\dummycode{my awesome title}'')} \codecomment{Add a title} 
+\end{example}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Facets}
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Facets}
+Facets subdivide your plot into subplots by variables. There are two ways to facet:
+\begin{description}
+\item[\code{wrap}] A horizontal row of plots faceted by one variable.
+\item[\code{grid}] A grid of plots faceted by two variables.
+\end{description}
+
+\begin{example}[wrap]
+\dummycode{some.data} \pipe  \\
+\code{ggplot(}\\
+\quad \code{aes(x = \dummycode{x.variable}}, \\
+\qquad \quad \code{ y = \dummycode{y.variable})} $+$ \\
+ \code{geom\_\dummycode{some.geom}()} $+$ \\
+\code{facet\_wrap($\sim$ \dummycode{horizontal.facet.variable}) }
+\end{example}
+\end{frame}
+%%%%%%%%%%%%%%%%%
+\begin{frame}{Facets}
+Facets subdivide your plot into subplots by variables. There are two ways to facet:
+\begin{description}
+\item[\code{wrap}] A horizontal row of plots faceted by one variable.
+\item[\code{grid}] A grid of plots faceted by two variables.
+\end{description}
+
+\begin{example}[grid]
+\dummycode{some.data} \pipe  \\
+\code{ggplot(}\\
+\quad \code{aes(x = \dummycode{x.variable}}, \\
+\qquad \quad \code{ y = \dummycode{y.variable})} $+$ \\
+ \code{geom\_\dummycode{some.geom}()} $+$ \\
+\code{facet\_grid (\dummycode{vertical.facet.variable} $\sim$ \dummycode{horizontal.facet.variable}) }
+\end{example}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Resources}
+%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Resources}
+\begin{itemize}
+\item RStudio data-wrangling and data-visualisation cheat sheets.
+\item Edward Tufte's \emph{The Visual Display of Quantitative Information} - `The Strunk and White of visualisation'
+\item Hadley Wickham's \emph{Elegant Graphics for Data Analysis} 
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Exercises}
+\begin{frame}{Who survived the sinking of the Titanic?}
+
+\exercise{Create a visualisation that compares how the different genders survived the sinking of the Titanic.}
+\exercise{Create a visaulisation that compares how the different classes survived the sinking of the Titanic.}
+\exercise{Create a visualisation that compares how the different classes and genders survived the sinking of the Titanic.}
+\exercise{Create a visualisation that compares how ages and classes survived the sinking of the Titanic.}
+
+\end{frame}
+
+\end{document}

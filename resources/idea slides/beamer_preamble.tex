@@ -1,0 +1,115 @@
+% beamer set up
+%\documentclass{beamer}
+% \documentclass[handout]{beamer}
+
+\usefonttheme{serif}
+\beamertemplatenavigationsymbolsempty % Hide grey symbols along bottom right.
+\setbeamercolor*{structure}{fg= MyDarkBlue} 
+\setbeamertemplate{itemize items}[circle]
+
+\AtBeginSection[]{\frame{\frametitle{Outline}%
+% \tableofcontents[currentsection, hideothersubsections]}}%
+%\tableofcontents[currentsection, 
+%currentsubsection, 
+%subsectionstyle=show/shaded,
+%sectionstyle=show/shaded,
+%hideothersubsections]}}
+\tableofcontents[currentsection, currentsubsection]}}
+\AtBeginSubsection[]{
+\frame{\frametitle{Outline}
+\tableofcontents[currentsection, 
+currentsubsection]
+}
+}
+
+\setbeamercolor{block title}{fg = MyDarkBlue}
+\setbeamercolor{block title example}{fg = MyDarkGreen}
+\setbeamercolor{frametitle}{fg = gray}
+
+\usepackage{hyperref}
+\usepackage{soul} % For strikethrough \st
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Worked examples
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Maths and theorems
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\usepackage{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% theorem commands
+%\theoremstyle{plain}
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{lemma:trans}[theorem]{Transfer Lemma}
+%\newtheorem{theorem: main}[theorem]{Main Theorem}
+%\newtheorem{corollary}[theorem]{Corollary}
+%
+%
+%\theoremstyle{definition}
+%\newtheorem{example}[theorem]{Example}
+%\newtheorem{note}[theorem]{Note}
+%\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{remarks}[theorem]{Remarks}
+%\newtheorem{remark}[theorem]{Remark}
+%\newtheorem{claim}[theorem]{Claim}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% tikz 
+
+% Packages
+\usepackage{tikz}
+\usepackage{fix-cm} % Overrides tex restrictions on font size
+\usetikzlibrary{arrows, calc}
+
+% Graphs
+\tikzstyle{vertex} = [shape = circle, fill = black, inner sep = 2.5]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Code
+
+% Verbatim text
+\newcommand{\ttt}[1]{\texttt{#1}}
+
+% Dummy code
+\newcommand{\code}[1]{\ttt{#1}}
+\newcommand{\dummycode}[1]{\textcolor{MyRose}{\code{#1}}}
+\newcommand{\codecomment}[1]{\ttt{\# #1}}
+
+% Pipe/Magrittr
+\newcommand{\pipe}{ \ttt{\%$>$\% }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Colours
+\definecolor{MyLightGreen}{HTML}{a6b173}
+\definecolor{MyDarkGreen}{HTML}{4B610B}
+
+\definecolor{MyLightBlue}{HTML}{9ea4bc}
+\definecolor{MyDarkBlue}{HTML}{0B2F3A}
+
+\definecolor{MyLightGrey}{HTML}{c7c8c9}
+\definecolor{MyRose}{HTML}{b18ea9}
+
+% Text colours
+\newcommand{\defn}[1]{\textcolor{MyDarkGreen}{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lecture commands
+
+\newcommand{\timetomath}{
+\begin{frame}
+\begin{center}
+\defn{Time to math}
+\end{center}
+\end{frame}
+}
+
+\newcommand{\exercise}[1]{
+\begin{center}
+\textcolor{MyDarkBlue}{\underline{Exercise}: #1}
+\end{center}
+}

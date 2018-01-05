@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Themes and objectives}{3}{0}{1}
+\beamer@sectionintoc {2}{The basic structure of a ggplot}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Getting started}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Layers}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Aesthetics}{16}{0}{2}
+\beamer@subsectionintoc {2}{4}{Geometries}{22}{0}{2}
+\beamer@sectionintoc {3}{Multiple layers}{29}{0}{3}
+\beamer@sectionintoc {4}{Facets}{33}{0}{4}
+\beamer@sectionintoc {5}{Resources}{36}{0}{5}
+\beamer@sectionintoc {6}{Exercises}{38}{0}{6}

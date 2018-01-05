@@ -1,0 +1,11 @@
+\frametitle{Layers: first layer}
+Plots are built in layers, added using $+$.
+
+\begin{example}
+\dummycode{some.data} \pipe \code{ggplot()} + \dummycode{layers}
+\end{example}
+
+\pause
+\begin{definition}
+The \defn{pipe} symbol \pipe passes the first object into the first argument of the subsequent function. Its keyboard shortcut is \ttt{control + shift + M}.
+\end{definition}
