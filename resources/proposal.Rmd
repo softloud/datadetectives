@@ -11,12 +11,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Data Detectives
 
-This workshop provides a problem-solving approach to exploring data visualisation in the `tidyverse`. It's for base`R`s who haven't had a chance to explore the `tidyverse`.  
+Data visualisation is a critical component of a modern data science workflow. The `tidyverse` toolkit provides a succinct and powerful methodology for exploring and communicating data driven insights. This workshop is for those new to the `tidyverse` toolkit or wishing to improve on their data visualisation and exploration skills.
 
-With new visualisation tools rolling out at a breakneck pace, it is a challenge to stay up to date. With new techniques come new questions about best practice. As a group, we will share knowledge on how to answer questions visually and provide a forum to discuss best practice given these new techniques. 
+With new techniques come new questions about best practice. As a group, we will share knowledge on how to explore data, frame and answer questions visually as well as provide a forum to discuss best practice given these new techniques. 
 
-This workshop will focus on the underlying principles of `ggplot`'s language of layers, rather than providing pre-scripted visualisations. Since visualisation often calls for wrangling, we will explore the `tidy` way of data wrangling for data vis, with `dplyr` and `tidyr` packages. 
+This workshop will focus on the underlying principles of `ggplot`'s language of layers, rather than providing pre-scripted visualisations. Thorough data exploration requires data wrangling and we will explore the `tidy` way of data wrangling for data vis, with both the `dplyr` and `tidyr` packages. 
 
-Using wrangling, we can avoid the pitfall of letting data structure dictate the form of the visualisation. This workshop is for those who wish to share knowledge and ideas and/or learn about `tidy` vis.  
+Data wrangling is a fundamental skill of data agency: the ability to manipulate data to answer the questions the user poses, rather than simply answering the questions the data poses. Solid skills in data agency can avoid the pitfall of letting data structure dictate the form of the visualisation. 
 
-I think this will be a half-day workshop. If I ensure the data is relatively tidied first, then the wrangling will just be for the purposes of exploring new visualisations. 
+This workshop will run for a half day. While data agency skills will be taught as a means of data exploration, the data sets will begin in a relatively tidy form to minimise frustration for participants: we'll be up and producing vis in no time! This workshop will be targeted at developing users' skills in the `tidyverse`, but we'll also be exploring some of its lesser known offshoots as we explore diverse and interesting datasets.
+
+
