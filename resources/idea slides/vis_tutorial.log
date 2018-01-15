@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.2)  6 JAN 2018 09:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.2)  4 JAN 2018 12:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -706,116 +706,15 @@ Package: beamerinnerthemedefault 2014/06/30  (rcs-revision 580088513a67)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/themes/outer/beamerouterth
 emedefault.sty
 Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
-))) (./beamer_preamble.tex
-(/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/themes/font/beamerfontthem
-eserif.sty
-Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/soul/soul.sty
-Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks43
-\SOUL@lasttoken=\toks44
-\SOUL@cmds=\toks45
-\SOUL@buffer=\toks46
-\SOUL@token=\toks47
-\SOUL@spaceskip=\skip57
-\SOUL@ttwidth=\dimen188
-\SOUL@uldp=\dimen189
-\SOUL@ulht=\dimen190
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
-e.tex
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box53
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
-tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
--0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen191
-\pgf@nodesepend=\dimen192
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
--1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen193
-\pgffor@skip=\dimen194
-\pgffor@stack=\toks48
-\pgffor@toks=\toks49
-))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
-e.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
-dlers.code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count153
-\pgfplotmarksize=\dimen195
-)
-\tikz@lastx=\dimen196
-\tikz@lasty=\dimen197
-\tikz@lastxsaved=\dimen198
-\tikz@lastysaved=\dimen199
-\tikzleveldistance=\dimen256
-\tikzsiblingdistance=\dimen257
-\tikz@figbox=\box54
-\tikz@figbox@bg=\box55
-\tikz@tempbox=\box56
-\tikz@tempbox@bg=\box57
-\tikztreelevel=\count154
-\tikznumberofchildren=\count155
-\tikznumberofcurrentchild=\count156
-\tikz@fig@count=\count157
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
-e.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count158
-\pgfmatrixcurrentcolumn=\count159
-\pgf@matrix@numberofcolumns=\count160
-)
-\tikz@expandcount=\count161
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/fix-cm.sty
-Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+! LaTeX Error: File `beamer_preamble.tex' not found.
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
-code.tex
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen258
-))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
-)) (./vis_tutorial.aux)
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(./vis_tutorial.aux)
 \openout1 = `vis_tutorial.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -831,8 +730,6 @@ LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 
 *geometry* driver: auto-detecting
@@ -871,17 +768,17 @@ LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count162
-\scratchdimen=\dimen259
-\scratchbox=\box58
-\nofMPsegments=\count163
-\nofMParguments=\count164
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count165
-\MPscratchDim=\dimen260
-\MPnumerator=\count166
-\makeMPintoPDFobject=\count167
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count153
+\scratchdimen=\dimen188
+\scratchbox=\box53
+\nofMPsegments=\count154
+\nofMParguments=\count155
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count156
+\MPscratchDim=\dimen189
+\MPnumerator=\count157
+\makeMPintoPDFobject=\count158
+\everyMPtoPDFconversion=\toks44
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -898,7 +795,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box59
+\AtBeginShipoutBox=\box54
 Package hyperref Info: Link coloring OFF on input line 10.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -907,7 +804,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count168
+\c@section@level=\count159
 )
 LaTeX Info: Redefining \ref on input line 10.
 LaTeX Info: Redefining \pageref on input line 10.
@@ -917,6 +814,58 @@ LaTeX Info: Redefining \nameref on input line 10.
 \@outlinefile=\write5
 \openout5 = `vis_tutorial.out'.
 
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 10.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 10.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 10.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 10.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 10.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 10.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 10.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 10.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 10.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
+0.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
+10.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
+ut line 10.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -944,64 +893,58 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 LaTeX Info: Redefining \includegraphics on input line 10.
 
-(./vis_tutorial.nav) [1
+(./vis_tutorial.nav)
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./vis_
-tutorial.toc) [2
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 14.
 
-] (./vis_tutorial.toc) [3
+[1
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
- [4
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+No file vis_tutorial.toc.
+[2
 
 ]
-(./vis_tutorial.toc) [5
-
-] [6
-
-] (./vis_tutorial.toc) [7
-
-]
-\openout4 = `vis_tutorial.vrb'.
-
- (./vis_tutorial.vrb)
-[8
-
-] [9
-
-]
-\openout4 = `vis_tutorial.vrb'.
-
- (./vis_tutorial.vrb) [10
-
-] (./vis_tutorial.toc) [11
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 116.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [12
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 30.
 
-]
-\openout4 = `vis_tutorial.vrb'.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+./vis_tutorial.tex:30: Undefined control sequence.
+<recently read> \defn 
+                      
+l.30 \end{frame}
+                
+? 
+./vis_tutorial.tex:30: Emergency stop.
+<recently read> \defn 
+                      
+l.30 \end{frame}
+                
+End of file on the terminal!
 
-
-(./vis_tutorial.vrb) [13
-
-] (./vis_tutorial.vrb) [14
+ 
+Here is how much of TeX's memory you used:
+ 16627 strings out of 493014
+ 318763 string characters out of 6133351
+ 385420 words of memory out of 5000000
+ 19783 multiletter control sequences out of 15000+600000
+ 9782 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,14n,55p,392b,551s stack positions out of 5000i,500n,10000p,200000b,80000s
+./vis_tutorial.tex:30:  ==> Fatal error occurred, no output PDF file produced!
+b) [14
 
 ] [15
 

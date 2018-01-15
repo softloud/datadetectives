@@ -1,0 +1,20 @@
+---
+title: "useR! 2018 workshop proposal"
+author: "Trouble"
+date: "15/01/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data Detectives
+
+This workshop provides a problem-solving approach to exploring data visualisation in the `tidyverse`. It's for base`R`s who haven't had a chance to explore the `tidyverse`.  
+
+With new visualisation tools rolling out at a breakneck pace, it is a challenge to stay up to date. With new techniques come new questions about best practice. As a group, we will share knowledge on how to answer questions visually and provide a forum to discuss best practice given these new techniques. 
+
+This workshop will focus on the underlying principles of `ggplot`'s language of layers, rather than providing pre-scripted visualisations. Since visualisation often calls for wrangling, we will explore the `tidy` way of data wrangling for data vis, with `dplyr` and `tidyr` packages. 
+
+Using wrangling, we can avoid the pitfall of letting data structure dictate the form of the visualisation. This workshop is for those who wish to share knowledge and ideas and/or learn about `tidy` vis.   
